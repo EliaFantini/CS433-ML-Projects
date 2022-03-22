@@ -1,5 +1,4 @@
-# Project 1. Team pasta_balalaika
-AIcrowd ML Higgs
+# AIcrowd ML Higgs
 The Higgs boson is an elementary particle in the Standard Model of physics which explains why other particles
 have mass. Its discovery at the Large Hadron Collider at CERN was announced in March 2013. In this project,
 we applied machine learning techniques to actual CERN particle accelerator data to recreate the process of
