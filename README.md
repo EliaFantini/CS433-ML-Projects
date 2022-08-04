@@ -1,48 +1,64 @@
-# [Machine Learning Course EPFL](https://www.epfl.ch/labs/mlo/machine-learning-cs-433) 2021, Course Project 2
+<p align="center">
+  <img alt="🛣️Road_Segmentation" src="https://user-images.githubusercontent.com/62103572/182944121-e735607d-3166-4ed2-9753-fb9a494928ac.png">
+  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/EliaFantini/Road-Segmentation-convolutional-neural-network-classifier">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/EliaFantini/Road-Segmentation-convolutional-neural-network-classifier">
+  <img alt="GitHub code size" src="https://img.shields.io/github/languages/code-size/EliaFantini/Road-Segmentation-convolutional-neural-network-classifier">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/EliaFantini/Road-Segmentation-convolutional-neural-network-classifier">
+  <img alt="GitHub follow" src="https://img.shields.io/github/followers/EliaFantini?label=Follow">
+  <img alt="GitHub fork" src="https://img.shields.io/github/forks/EliaFantini/Road-Segmentation-convolutional-neural-network-classifier?label=Fork">
+  <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/EliaFantini/Road-Segmentation-convolutional-neural-network-classifier?abel=Watch">
+  <img alt="GitHub star" src="https://img.shields.io/github/stars/EliaFantini/Road-Segmentation-convolutional-neural-network-classifier?style=social">
+</p>
 
-This repository contains the solution of team Pasta-Balalaika of [Road Segmentation Challenge](https://www.aicrowd.com/challenges/epfl-ml-road-segmentation) on AI Crowd.
-The detailed project describtion is available [here](https://www.aicrowd.com/challenges/epfl-ml-road-segmentation). 
+This project aims at classifying the pixels who represent a road and those who don't in an aerial/satellite image, thanks to the use of a Convolutional Neural Network (CNN).
 
-## Team 
--  **Anastasiia Filippova** ([@nastya236](https://github.com/nastya236))
--  **Elia Fantini** ([@EliaFantini](https://github.com/EliaFantini))
--  **Narek Alvandian** ([@narekvslife](https://github.com/narekvslife))
+The problem was part of an artificial intelligence [Road Segmentation Challenge](https://www.aicrowd.com/challenges/epfl-ml-road-segmentation) from AICrowd. Our team, called Pasta-Balalaika, reached the position 12/107 on the leaderboard, with an F1 score of *0.910* and an accuracy	of *0.952*. This project was also done as an assignment of the EPFL course [CS-433 Machine Learning](https://edu.epfl.ch/coursebook/en/machine-learning-CS-433).
 
-Contents
+The following image shows an example of the prediction made by our final model:
+<p align="center">
+  <img width="764" alt="Immagine 2022-08-04 222840" src="https://user-images.githubusercontent.com/62103572/182946552-d66d73fc-6b7b-4858-9ff5-ddc4fb6c4cc3.png">
+</p>
+
+## Authors 
+-  [Anastasiia Filippova](https://github.com/nastya236)
+-  [Elia Fantini](https://github.com/EliaFantini)
+-  [Narek Alvandian](https://github.com/narekvslife)
+
+Summary
 ========
 
- * [Installation](#installation)
- * [Usage](#usage)
- * [Results and Examples](#results)
- * [Conclusion and Future work](#conclusion)
+ * How to install
+ * Usage
+ * Results and Examples
+ * Conclusion and Future work
 
-### Installation
+### How to install
 ---
-0. Download the project repository:
+- Download the project repository:
+```shell
+git clone https://github.com/CS-433/ml-project-2-pasta_balalaika.git`
 
-`git clone https://github.com/CS-433/ml-project-2-pasta_balalaika.git`
+cd  ml-project-2-pasta_balalaika`
+```
+- Create a virtual enviroment (download and install [Anaconda 3](https://www.anaconda.com/products/distribution) first if you don't have it already):
+```shell
+python3 -m pip install --user virtualenv`
 
-`cd  ml-project-2-pasta_balalaika`
-
-1. Create virtual enviroment:
-
-`python3 -m pip install --user virtualenv`
-
-` virtualenv -p python3 pasta-balalaika`
-
-2. Activate the enviroment:
-
-`source pasta-balalaika/bin/activate`
-
-3. Install the requirements:
-
-`python3 -m pip install -r requirements.txt`
-
+virtualenv -p python3 pasta-balalaika`
+```
+- Activate the enviroment:
+```shell
+source pasta-balalaika/bin/activate`
+```
+- Install the requirements:
+```shell
+python3 -m pip install -r requirements.txt`
+```
 ### Usage
 ---
 In the repository, the `libseg` python package contains all the code of the project.
 
-The package `experiments` contains the final notebook, in which you can find the running of different pipelines, plots of the losses and metrics. 
+The package `experiments` contains the final notebook, in which you can find the running of different pipelines and experiments, plots of the losses and metrics. 
 
 `libseg`:
 * `dataset`
@@ -176,3 +192,10 @@ Many different adaptations, tests, and experiments have been left for the future
 - Use the combination of DiceLoss and BCELoss (inspired by [paper](https://arxiv.org/pdf/2006.14822.pdf)).
 - Try other optimizers, such as AmsGrad and YOGI (inpired by this [paper](https://arxiv.org/abs/1904.09237) and this [paper](https://papers.nips.cc/paper/2018/hash/90365351ccc7437a1309dc64e4db32a3-Abstract.html#:~:text=Adaptive%20gradient%20methods%20that%20rely,that%20arise%20in%20deep%20learning.), respectively)
 - Try an ensemble machine learning algorithm such as Stacked Generalization.
+
+## 🛠 Skills
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/EliaFantini/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/-elia-fantini/)
+
